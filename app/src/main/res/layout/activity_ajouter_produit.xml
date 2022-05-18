@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pedller4"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AjouterProduitActivity">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/titre"
+            android:textAllCaps="true"
+            android:textColor="@color/vert"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/titre_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/titre"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/prix"
+            android:textAllCaps="true"
+            android:textColor="@color/vert"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/prix_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/prix"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/image"
+            android:textAllCaps="true"
+            android:textColor="@color/vert"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/add_img_iv"
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/gris_medium"
+            android:scaleType="center"
+            android:src="@drawable/ic_sharp_add_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/description"
+            android:textAllCaps="true"
+            android:textColor="@color/vert"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/description"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ajouter_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="@string/ajouter"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"
+
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+
+                <Button
+                    android:id="@+id/annuler_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="@string/annuler"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

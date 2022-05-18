@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/pedller4"
+    android:orientation="vertical"
+    android:padding="20dp"
+
+    tools:context=".fragments.ProfilFragment">
+
+    <FrameLayout
+        android:id="@+id/fullScreenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp"
+        android:visibility="gone"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/full_screen_picture_iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:src="@drawable/ic_baseline_exit_to_app_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/change_picture_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:gravity="center"
+                    android:text="@string/changer"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"
+
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+
+                <Button
+                    android:id="@+id/close_picture_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edittext"
+                    android:gravity="center"
+                    android:text="@string/fermer"
+                    android:textAllCaps="true"
+                    android:textColor="@color/noir"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/vert"
+            app:cardCornerRadius="250dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/profile_picture_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_person_outline_24" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/nom_prenom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/noir"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/compte_profil_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_edit_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/compte_profil"
+        android:textColor="@color/noir"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/paiement_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_account_balance_wallet_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/paiement"
+        android:textColor="@color/noir"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/adresse_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_place_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/adresses"
+        android:textColor="@color/noir"
+        android:textSize="15sp" />
+
+   <!-- <Button
+        android:id="@+id/historique_commande_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_baseline_history_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/historique_cmd"
+        android:textColor="@color/noir"
+
+        android:textSize="15sp" />-->
+
+    <Button
+        android:id="@+id/reset_pass_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_outline_bug_report_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:text="@string/reset_mdp"
+        android:textColor="@color/noir"
+
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/deconnecter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_baseline_exit_to_app_24"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawablePadding="10dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/logout"
+            android:textColor="@color/noir"
+
+            android:textSize="15sp"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

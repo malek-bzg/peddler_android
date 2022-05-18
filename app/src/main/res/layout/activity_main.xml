@@ -3,49 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#E8FFFE"
     android:layout_height="match_parent"
-    tools:context=".screens.MainActivity">
+    tools:context=".MainActivity">
 
-   <ImageView
-       android:id="@+id/imageSVG"
-       android:layout_width="match_parent"
-       android:layout_height="@dimen/_250sdp"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
-
-   <androidx.appcompat.widget.AppCompatButton
-       android:layout_marginTop="@dimen/_15sdp"
-       android:id="@+id/buttonlogin"
-       android:layout_width="wrap_content"
-       android:layout_height="@dimen/_45sdp"
-       android:layout_gravity="center_horizontal"
-       android:background="@drawable/btn"
-       android:gravity="center"
-       android:text="Sign In"
-       android:textAlignment="center"
-       android:textColor="@color/black"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/imageSVG" />
-
-   <androidx.appcompat.widget.AppCompatButton
-       android:id="@+id/buttonreg"
-       android:layout_width="wrap_content"
-       android:layout_height="@dimen/_45sdp"
-       android:layout_gravity="center_horizontal"
-       android:background="@drawable/btn"
-       android:gravity="center"
-       android:text="Create account"
-       android:textAlignment="center"
-       android:layout_marginTop="@dimen/_35sdp"
-       android:textColor="@color/black"
-       android:textStyle="bold"
-       app:layout_constraintEnd_toEndOf="@+id/buttonlogin"
-       app:layout_constraintStart_toStartOf="@+id/buttonlogin"
-       app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
